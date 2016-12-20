@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ziwen chen, Microsoft, LIC=1WSII-T4IJ9-KTW3H-W9YBG-MS34U-HWY4E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      Segger\JL2CM3.dll V2.99.20.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+E:\ziwen.chen\axis\code-debug\USER\4AXIS.uvprojx
+Project File Date:  12/19/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '4AXIS'
+compiling MS5611.c...
+..\SOFTWARE\inc\AttitudeAlgorithm.h(4): warning:  #1295-D: Deprecated declaration get_lib_info - give arg types
+  const char* get_lib_info();
+..\SOFTWARE\inc\filter.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif  /*_KALMAN_FILTER_H*/
+..\HARDWARE\MS5611\MS5611.c(126): warning:  #223-D: function "vTaskSuspendAll" declared implicitly
+          
+EBUG("PROM_C[%d]=%d\r\n",i,PROM_C[i]);
+..\HARDWARE\MS5611\MS5611.c(126): warning:  #223-D: function "xTaskResumeAll" declared implicitly
+          
+EBUG("PROM_C[%d]=%d\r\n",i,PROM_C[i]);
+..\HARDWARE\MS5611\MS5611.c(104): warning:  #177-D: variable "i2cret" was declared but never referenced
+  	uint8_t i2cret[2];
+..\HARDWARE\MS5611\MS5611.c(198): warning:  #223-D: function "LPF2pSetCutoffFreq_7" declared implicitly
+      LPF2pSetCutoffFreq_7(62,5);
+..\HARDWARE\MS5611\MS5611.c(245): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Altitude = ((pow((Alt_offset_Pa / MS5611_Pressure), 1/5.257) - 1.0) * (MS5611_Temperature + 273.15)) / 0.0065;
+..\HARDWARE\MS5611\MS5611.c(295): warning:  #223-D: function "LPF2pApply_7" declared implicitly
+      MS5611_Altitude = LPF2pApply_7(MS5611_Altitude);
+..\HARDWARE\MS5611\MS5611.c(22): warning:  #177-D: variable "Now_doing" was declared but never referenced
+  static uint8_t  Now_doing = SCTemperature;	//ÂΩ?Ââ?ËΩ?Êç?Áä?ÊÄ?
+..\HARDWARE\MS5611\MS5611.c(24): warning:  #177-D: variable "Current_delay" was declared but never referenced
+  static uint32_t Current_delay=0;	    //ËΩ?Êç?Âª?Êó?Êó?Èó? us 
+..\HARDWARE\MS5611\MS5611.c(25): warning:  #177-D: variable "Start_Convert_Time" was declared but never referenced
+  static uint32_t Start_Convert_Time; //Âê?Âä?ËΩ?Êç?Êó?Áö? Êó?Èó? us 
+..\HARDWARE\MS5611\MS5611.c(58): warning:  #550-D: variable "Press_buffer" was set but never used
+  static float Temp_buffer[MOVAVG_SIZE],Press_buffer[MOVAVG_SIZE],Alt_buffer[MOVAVG_SIZE];
+..\HARDWARE\MS5611\MS5611.c: 12 warnings, 0 errors
+compiling DataAcquisition.c...
+..\SOFTWARE\inc\AttitudeAlgorithm.h(4): warning:  #1295-D: Deprecated declaration get_lib_info - give arg types
+  const char* get_lib_info();
+..\HARDWARE\PWM\pwm.h(18): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+  void PWM_Init();
+..\SOFTWARE\inc\filter.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif  /*_KALMAN_FILTER_H*/
+..\SOFTWARE\src\DataAcquisition.c(301): warning:  #223-D: function "LPF2pSetCutoffFreq_1" declared implicitly
+      LPF2pSetCutoffFreq_1(SYSTEM_FREQ,FILTER_FREQ);		//30Hz
+..\SOFTWARE\src\DataAcquisition.c(302): warning:  #223-D: function "LPF2pSetCutoffFreq_2" declared implicitly
+      LPF2pSetCutoffFreq_2(SYSTEM_FREQ,FILTER_FREQ);
+..\SOFTWARE\src\DataAcquisition.c(303): warning:  #223-D: function "LPF2pSetCutoffFreq_3" declared implicitly
+      LPF2pSetCutoffFreq_3(SYSTEM_FREQ,FILTER_FREQ);
+..\SOFTWARE\src\DataAcquisition.c(304): warning:  #223-D: function "LPF2pSetCutoffFreq_4" declared implicitly
+      LPF2pSetCutoffFreq_4(SYSTEM_FREQ,FILTER_FREQ);
+..\SOFTWARE\src\DataAcquisition.c(305): warning:  #223-D: function "LPF2pSetCutoffFreq_5" declared implicitly
+      LPF2pSetCutoffFreq_5(SYSTEM_FREQ,FILTER_FREQ);
+..\SOFTWARE\src\DataAcquisition.c(306): warning:  #223-D: function "LPF2pSetCutoffFreq_6" declared implicitly
+      LPF2pSetCutoffFreq_6(SYSTEM_FREQ,FILTER_FREQ);
+..\SOFTWARE\src\DataAcquisition.c(321): warning:  #167-D: argument of type "void (*)()" is incompatible with parameter of type "TaskFunction_t"
+      xTaskCreate(    DataAcquisitionTask,        /* Pointer to the function that implements the task.              */
+..\SOFTWARE\src\DataAcquisition.c(333): warning:  #1-D: last line of file ends without a newline
+  }
+..\SOFTWARE\src\DataAcquisition.c: 11 warnings, 0 errors
+linking...
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pApply_7 (referred from ms5611.o).
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pSetCutoffFreq_7 (referred from ms5611.o).
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pSetCutoffFreq_1 (referred from dataacquisition.o).
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pSetCutoffFreq_2 (referred from dataacquisition.o).
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pSetCutoffFreq_3 (referred from dataacquisition.o).
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pSetCutoffFreq_4 (referred from dataacquisition.o).
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pSetCutoffFreq_5 (referred from dataacquisition.o).
+..\OBJ\4AXIS.axf: Error: L6218E: Undefined symbol LPF2pSetCutoffFreq_6 (referred from dataacquisition.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 8 error messages.
+"..\OBJ\4AXIS.axf" - 8 Error(s), 23 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\ziwen.chen\axis\code-debug\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
